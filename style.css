@@ -1,0 +1,13 @@
+.head {
+    height: 50px;
+    width: 50px;
+    border: solid 1px #000;
+    border-radius: 50%;
+}
+
+.torso {
+    width: 1px;
+    height: 85px;
+    background: #000;
+    top: 51px;
+}
