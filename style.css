@@ -1,13 +1,18 @@
+.container {
+  height: 400px;
+  width: 400px;
+}
 .head {
-    height: 50px;
-    width: 50px;
-    border: solid 1px #000;
+    height: 30%;
+    width: 30%;
+    border: solid 10px #000;
     border-radius: 50%;
 }
+.body {
+  height: 30px;
+  width: 30px;
+  border: solid 10px #000;
+  border-radius: 20%;
+  padding: 10% 10% 10% 10%;
 
-.torso {
-    width: 1px;
-    height: 85px;
-    background: #000;
-    top: 51px;
 }
