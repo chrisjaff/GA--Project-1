@@ -1,4 +1,4 @@
-$(document).ready(function() {});
+/*$(document).ready(function() {});
 question1()
 
 function question1() {
@@ -7,7 +7,6 @@ function question1() {
         question2();
     } else if (answer1 == 2) {
         addPiece1()
-        question2();
     }
 }
 
@@ -17,50 +16,54 @@ function question2() {
         question3();
     } else if (answer2 == 2) {
         addPiece2()
-        question3();
     }
 }
 
 function question3() {
     var answer3 = prompt("What is the capitol of New York?(1)rope(2)popper")
     if (answer3 == 1) {
-    question4();
-} else if (answer3 == 2) {
-    addPiece3()
-    question4();
+        question4();
+    } else if (answer3 == 2) {
+        addPiece3()
+    }
 }
+
+function question4() {
+    var answer4 = prompt("What is the capitol of Maryland?(1)top(2)bottom")
+    if (answer4 == 1) {
+        question5();
+    } else if (answer4 == 2) {
+        addPiece4()
+    }
 }
-/*function question3 () {
-  prompt ("How many licks does it take to get the center of a tootsie pop?")
-  var licks = 3;
-  switch (licks) {
-    case "1":
-      gameOver()
-      break;
-  case "2"
-      gameOver()
-    break;
-    case "3"
+
+function addPiece1() {
+    $(".head").hide()
+    question2()
+};
+
+function addPiece2() {
+    $(".body").hide();
+    question3()
+};
+
+function addPiece3() {
+    $(".left-arm").hide();
     question4()
-    break;
-  }
-}
+};
+
+function addPiece4() {
+    $(".right-arm").hide();
+    question5()
+};
+
+function addPiece5() {
+    $(".left-leg").hide();
+    question6()
+};
+
+function addPiece6() {
+    $(".right-leg").hide();
+    question7()
+};
 */
-function addPiece() {
-  $(".head").hide();
-};
-function addPiece() {
-  $(".body").hide();
-};
-function addPiece() {
-  $(".left-arm").hide();
-};
-function addPiece() {
-  $(".right-arm").hide();
-};
-function addPiece() {
-  $(".left-leg").hide();
-};
-function addPiece() {
-  $(".right-leg").hide();
-};

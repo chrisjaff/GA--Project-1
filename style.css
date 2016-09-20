@@ -2,8 +2,8 @@ body{
   background-color: blue;
 }
 .container {
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
 }
 .head {
     height: 30%;
@@ -17,5 +17,11 @@ body{
   border: solid 10px #000;
   border-radius: 20%;
   padding: 10% 10% 10% 10%;
+
+}
+.left-arm {
+  height: 10px;
+  width: 10px;
+  float: right;
 
 }
