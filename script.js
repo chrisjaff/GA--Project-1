@@ -1,5 +1,20 @@
 $(document).ready(function() {});
+
+gameStart()
+
+function gameStart(){
+  $(".head").hide();
+  $(".body").hide();
+  $(".left-arm").hide();
+  $(".right-arm").hide();
+  $(".left-leg").hide();
+  $(".right-leg").hide();
 question1()
+}
+
+function gameEnd() {
+  alert("Check your results")
+}
 
 function question1() {
     var answer1 = prompt("What is the capitol of Wisconsin?(1)cheese(2)ham");
@@ -36,33 +51,49 @@ function question4() {
         addPiece4()
     }
 }
+function question5() {
+    var answer5 = prompt("What is the capitol of Maryland?(1)top(2)bottom")
+    if (answer5 == 1) {
+        question6();
+    } else if (answer5 == 2) {
+        addPiece5()
+    }
+}
+function question6() {
+    var answer6 = prompt("What is the capitol of Maryland?(1)top(2)bottom")
+    if (answer6 == 1) {
+        gameEnd();
+    } else if (answer6 == 2) {
+        addPiece6()
+    }
+}
 
 function addPiece1() {
-    $(".head").hide()
+    $(".head").show()
     question2()
 };
 
 function addPiece2() {
-    $(".body").hide();
+    $(".body").show();
     question3()
 };
 
 function addPiece3() {
-    $(".left-arm").hide();
+    $(".left-arm").show();
     question4()
 };
 
 function addPiece4() {
-    $(".right-arm").hide();
+    $(".right-arm").show();
     question5()
 };
 
 function addPiece5() {
-    $(".left-leg").hide();
+    $(".left-leg").show();
     question6()
 };
 
 function addPiece6() {
-    $(".right-leg").hide();
-    question7()
+    $(".right-leg").show();
+    gameEnd()
 };
