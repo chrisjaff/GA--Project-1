@@ -1,4 +1,4 @@
-/*$(document).ready(function() {});
+$(document).ready(function() {});
 question1()
 
 function question1() {
@@ -66,4 +66,3 @@ function addPiece6() {
     $(".right-leg").hide();
     question7()
 };
-*/
