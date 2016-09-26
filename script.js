@@ -1,7 +1,10 @@
+// AM: Doesn't look like this line is doing anything.
+// AM: If you want something to happen when the document loads, you have to put that code inside of the curly brackets.
 $(document).ready(function() {});
 
 gameStart()
 
+// AM: Instead of hiding all the hangman parts here, why don't you just initialize them as `display: hidden` in your stylesheet?
 function gameStart(){
   $(".head").hide();
   $(".body").hide();
@@ -16,7 +19,15 @@ function gameEnd() {
   alert("Check your results")
 }
 
+// AM: As you probably already know, there's a lot of repetition going on here.
+// AM: An alternate solution would be to create a single function that handles all the question logic.
+// AM: It looks like each of your functions is identical with the exception of the prompt content and the correct answer.
+// AM: You could handle these values that changes as parameters to a single function.
+// AM: You could also save all question/answer information in an object that contains all that data, and pull from the correct question/answers depending where the user is in the application.
+// AM: Happy to talk about this further in person.
 function question1() {
+    // AM: While prompts get the job done, I would encourage you to think about how you could do this by displayed questions on the page by manipulating the DOM (i.e., displaying questions on the page, not in a prompt box).
+    // AM: Let me know if you have any questions on how to start implementing this.
     var answer1 = prompt("What is the capitol of Wisconsin?(1)cheese(2)ham");
     if (answer1 == 1) {
         question2();

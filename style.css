@@ -14,6 +14,7 @@ body{
     border: solid 10px #000;
     border-radius: 50%;
 }
+/* AM: It looks like a lot of the hangman body parts have similar properties. You could create a single selector to handle some of these so you don't have to repeat them. */
 .body {
   height: 30px;
   width: 30px;
@@ -29,6 +30,7 @@ body{
   position: relative;
   left: 350px;
   right: 0px;
+  /* AM: For some iterations of the game, the actual hangman is displayed off screen to the top. It probably has something to do with this negative `top` value. */
   top: -297px;
   left: 495px;
   border: solid 10px #000;
