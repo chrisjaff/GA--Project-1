@@ -13,5 +13,8 @@ I decided to separate the stick man into 6 pieces that are put into div's (head,
 
 Instructions: Answer the questions with either a 1 or 2 until you are prompted to check your results. If you see the entire stick man on the screen (6 pieces total) then you have lost. If not then you've won.
 
+<!-- AM: I think it's because the prompts are loading before the DOM can be manipulated. -->
+<!-- AM: Getting rid of prompts as the primary question/answer mechanism is the move. Let me know if you'd like help getting started on that if you have the time to revisit this. -->
+
 Unsolved problems:
 The stick man isn't showing up each time you get the answer wrong. The results only show up at the end.
